@@ -1,17 +1,68 @@
 /* GENERAL */
-a{
+a:not(#link-card){
     text-decoration: none;
     color: white;
 }
 
+.badge{
+    background-color: #165BBA;
+}
+
+
+
+.faq .list-group{
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+
+/* HEADER */
 header .container-fluid{
     height: 50px;
 }
 
+
+/* MAIN */
 main .container-fluid{
     height: calc(100vh - 50px)
 }
 
 main .container-fluid .row .col-auto{
     height: calc(100vh - 50px);
+    overflow: hidden;
+}
+
+main .container-fluid .row .col{
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+}
+
+
+main .col div .img-avatar img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+main .aside{
+    background-color: #051E34;
+}
+
+main .aside div div:hover{
+    background-color: rgba(220, 220, 220, 0.2);
+}
+
+main .my-data .list-group{
+    border: 0 solid;
+}
+
+.list-group-horizontal>.list-group-item+.list-group-item {
+    border-top-width: 0;
+}
+
+main .my-data .list-group:hover li{
+    background-color: lightgrey;
+}
+
+main .todo .list-group li:hover{
+    background-color: lightgray;
 }
