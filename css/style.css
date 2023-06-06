@@ -4,11 +4,6 @@ a:not(#link-card){
     color: white;
 }
 
-.badge{
-    background-color: #165BBA;
-}
-
-
 
 /* HEADER */
 header .container-fluid{
@@ -23,6 +18,7 @@ header .icon-nav *{
     text-decoration: none;
     color: black;
 }
+
 
 /* MAIN */
 main .container-fluid{
@@ -58,21 +54,32 @@ main .aside div div:hover{
     background-color: rgba(220, 220, 220, 0.2);
 }
 
+main .boolean .badge{
+    background-color: #165BBA;
+}
+
 main .boolean .badge:hover{
     cursor: pointer;
     background-color: rgba(220, 220, 220, 0.2);
 }
 
-
 main .my-data .list-group{
-    border: 0 solid;
+    border: 0;
+}
+
+.list-group-horizontal>.list-group-item:last-child:not(:first-child){
+    border-radius: 0;
+}
+
+.list-group-horizontal>.list-group-item:first-child:not(:last-child){
+    border-radius: 0;
 }
 
 .list-group-horizontal>.list-group-item+.list-group-item {
     border-top-width: 0;
 }
 
-main .my-data .list-group:hover li{
+main .my-data .list-group:not(:first-of-type):hover li{
     background-color: lightgrey;
 }
 
