@@ -86,7 +86,7 @@ main .todo .list-group li:hover{
 }
 
 /* RESPONSIVE */
-@media screen and (min-width: 796px) {
+@media screen and (min-width: 992px) {
     .offcanvas{
         max-width: 50%;
     }
