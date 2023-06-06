@@ -10,17 +10,19 @@ a:not(#link-card){
 
 
 
-.faq .list-group{
-    margin-left: 18px;
-    margin-right: 18px;
-}
-
-
 /* HEADER */
 header .container-fluid{
     height: 50px;
 }
 
+.logo-mobile *{
+    width: 50px;
+}
+
+header .icon-nav *{
+    text-decoration: none;
+    color: black;
+}
 
 /* MAIN */
 main .container-fluid{
@@ -35,8 +37,8 @@ main .container-fluid .row .col-auto{
 main .container-fluid .row .col{
     height: calc(100vh - 50px);
     overflow-y: auto;
+    overflow-x: hidden;
 }
-
 
 main .col div .img-avatar img{
     max-width: 20px;
@@ -44,12 +46,23 @@ main .col div .img-avatar img{
 }
 
 main .aside{
+    background-image: url('../img/sidebar-bg.png');
     background-color: #051E34;
+}
+
+main .aside div div *{
+    font-size: 1.3rem;
 }
 
 main .aside div div:hover{
     background-color: rgba(220, 220, 220, 0.2);
 }
+
+main .boolean .badge:hover{
+    cursor: pointer;
+    background-color: rgba(220, 220, 220, 0.2);
+}
+
 
 main .my-data .list-group{
     border: 0 solid;
@@ -66,3 +79,9 @@ main .my-data .list-group:hover li{
 main .todo .list-group li:hover{
     background-color: lightgray;
 }
+
+.faq .list-group{
+    margin-left: 18px;
+    margin-right: 18px;
+}
+

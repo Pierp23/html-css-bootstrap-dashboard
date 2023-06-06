@@ -25,9 +25,11 @@
                             <a href="#">
                                 <img class="navbar-brand d-none d-md-none d-lg-block" src="img/logo.svg" alt="logo">
                             </a>
-                            <!-- <a id="logo-mobile" class="navbar-brand d-block d-lg-none" href="#">
-                                <img src="img/mobile-logo.png" alt="logo-mobile">
-                            </a> -->
+                            <div class="logo-mobile">
+                                <a id="logo-mobile" class="navbar-brand d-block d-lg-none" href="#">
+                                    <img src="img/mobile-logo.png" alt="logo-mobile">
+                                </a>
+                            </div>                            
                         </div>
                         <div class="col">
                             <form class="d-flex" role="search">
@@ -40,9 +42,15 @@
                             </form>
                         </div>
                         <div class="col-auto" style="font-size: 1.5rem">
-                            <i class="bi bi-list-task ps-2"></i>
-                            <i class="bi bi-question-circle-fill px-2"></i>
-                            <i class="bi bi-three-dots-vertical px-2"></i>
+                            <a class="icon-nav d-none d-lg-inline-block" href="#">
+                                <i class="bi bi-list-task ps-2"></i>
+                            </a>
+                            <a class="icon-nav d-none  d-lg-inline-block" href="#">
+                                <i class="bi bi-question-circle-fill px-2"></i>
+                            </a>
+                            <a class="icon-nav d-none d-lg-inline-block" href="#">
+                                <i class="bi bi-three-dots-vertical px-2"></i>
+                            </a>
                             <div class="dropdown d-inline-block">
                                 <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   <i class="bi bi-bell-fill" style="color: orange; font-size: 1.5rem"></i>
@@ -53,8 +61,6 @@
                                   <li><a class="dropdown-item text-dark" href="#">Logout</a></li>
                                 </ul>
                             </div>
-
-                            
                         </div>
                     </div>
                 </nav>
@@ -81,7 +87,7 @@
                                 </a>
                             </div>
                             <div class="p-2">
-                                <a href="">
+                                <a href="#">
                                     <i class="bi bi-reception-4"></i>
                                     <span class="ps-2 d-none d-md-none d-lg-inline-block">Signals</span>
                                 </a>
@@ -97,10 +103,11 @@
                         </div>
                     </div>
 
+                    <!-- SEZIONE BOOLEAN BLU -->
                     <div class="col p-0">
                         <section class="bg-primary text-light px-2 py-4">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="boolean col-12 col-md-4 col-lg-6 my-1">
                                     <div>
                                         <h1 class="d-inline-block">Boolean</h1>
                                         <span class="badge">Piano blaze</span>
@@ -108,17 +115,18 @@
                                     <div>
                                         <span class="badge">3 app</span>
                                         <i class="bi bi-chevron-double-right"></i>
-                                        <span class="badge">Boolean mobile app</span>
-                                        <span class="badge">Boolean web app</span>
-                                        <span class="badge">Boolean blog app</span>
+                                        <span class="badge d-none d-lg-inline-block">Boolean mobile app</span>
+                                        <span class="badge d-none d-lg-inline-block">Boolean web app</span>
+                                        <span class="badge d-none d-lg-inline-block">Boolean blog app</span>
+                                        <span class="badge d-inline-block d-lg-none rounded-circle">+</span>
                                     </div>
 
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-md-4 col-lg-4 my-1">
                                     <p class="my-0">Studenti online negli ultimi 30 minuti</p>
                                     <p class="my-0" style="font-size: 22px">125</p>
                                 </div>
-                                <div class="col-2 text-end">
+                                <div class="col-12 col-md-4 col-lg-2 order-first order-md-0 my-1">
                                     <div>
                                         Nuovo studente
                                         <button class="btn btn-outline-light mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
@@ -209,10 +217,11 @@
                                 </div>
                             </div>
                         </section>
-
+                        
+                        <!-- SEZIONE DATI -->
                         <section class="px-2">
                             <div class="row">
-                                <div class="col-8">
+                                <div class="col-12 col-lg-8">
                                     <div class="my-data card mt-4" style="width: 100%;">
                                         <div class="card-header">
                                           <h2>
@@ -226,10 +235,10 @@
                                             <li class="list-group-item w-25 d-none d-md-block">
                                                 Data inizio
                                             </li>
-                                            <li class="list-group-item w-25">
+                                            <li class="list-group-item w-25 d-none d-sm-block">
                                                 ROI
                                             </li>
-                                            <li class="list-group-item w-25 d-none d-md-block">
+                                            <li class="list-group-item w-25">
                                                 Stato
                                             </li>
                                             <li class="list-group-item w-25">
@@ -246,7 +255,7 @@
                                             <li class="list-group-item w-25 d-none d-md-block">
                                                 15 Feb 2021
                                             </li>
-                                            <li class="list-group-item w-25 d-none d-md-block">
+                                            <li class="list-group-item w-25 d-none d-sm-block">
                                                 20%
                                             </li>
                                             <li class="list-group-item w-25">
@@ -261,7 +270,7 @@
                                                 </button>
                                             </li>
                                         </ul>
-                                         <ul class="list-group list-group-horizontal list-group-flush">
+                                        <ul class="list-group list-group-horizontal list-group-flush">
                                             <li class="list-group-item w-75">
                                                 <div class="img-avatar">
                                                     <img src="img/class-avatar.jpg" alt="">
@@ -271,7 +280,7 @@
                                             <li class="list-group-item w-25 d-none d-md-block">
                                                 16 Feb 2021
                                             </li>
-                                            <li class="list-group-item w-25 d-none d-md-block">
+                                            <li class="list-group-item w-25 d-none d-sm-block">
                                                 20%
                                             </li>
                                             <li class="list-group-item w-25">
@@ -296,7 +305,7 @@
                                             <li class="list-group-item w-25 d-none d-md-block">
                                                 17 Feb 2021
                                             </li>
-                                            <li class="list-group-item w-25 d-none d-md-block">
+                                            <li class="list-group-item w-25 d-none d-sm-block">
                                                 20%
                                             </li>
                                             <li class="list-group-item w-25">
@@ -321,7 +330,7 @@
                                             <li class="list-group-item w-25 d-none d-md-block">
                                                 18 Feb 2021
                                             </li>
-                                            <li class="list-group-item w-25 d-none d-md-block">
+                                            <li class="list-group-item w-25 d-none d-sm-block">
                                                 20%
                                             </li>
                                             <li class="list-group-item w-25">
@@ -336,7 +345,7 @@
                                                 </button>
                                             </li>
                                         </ul>
-                                         <ul class="list-group list-group-horizontal list-group-flush">
+                                        <ul class="list-group list-group-horizontal list-group-flush">
                                             <li class="list-group-item w-75">
                                                 <div class="img-avatar">
                                                     <img src="img/class-avatar.jpg" alt="">
@@ -346,7 +355,7 @@
                                             <li class="list-group-item w-25 d-none d-md-block">
                                                 19 Feb 2021
                                             </li>
-                                            <li class="list-group-item w-25 d-none d-md-block">
+                                            <li class="list-group-item w-25 d-none d-sm-block">
                                                 20%
                                             </li>
                                             <li class="list-group-item w-25">
@@ -371,7 +380,7 @@
                                             <li class="list-group-item w-25 d-none d-md-block">
                                                 20 Feb 2021
                                             </li>
-                                            <li class="list-group-item w-25 d-none d-md-block">
+                                            <li class="list-group-item w-25 d-none d-sm-block">
                                                 20%
                                             </li>
                                             <li class="list-group-item w-25">
@@ -396,7 +405,7 @@
                                             <li class="list-group-item w-25 d-none d-md-block">
                                                 21 Feb 2021
                                             </li>
-                                            <li class="list-group-item w-25 d-none d-md-block">
+                                            <li class="list-group-item w-25 d-none d-sm-block">
                                                 20%
                                             </li>
                                             <li class="list-group-item w-25">
@@ -421,7 +430,7 @@
                                             <li class="list-group-item w-25 d-none d-md-block">
                                                 22 Feb 2021
                                             </li>
-                                            <li class="list-group-item w-25 d-none d-md-block">
+                                            <li class="list-group-item w-25 d-none d-sm-block">
                                                 20%
                                             </li>
                                             <li class="list-group-item w-25">
@@ -446,44 +455,46 @@
                                         <div class="accordion accordion-flush" id="accordionExample">
                                             <div class="accordion-item mx-4">
                                                 <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    Come raggiungere un nuovo studente?
-                                                </button>
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        Come raggiungere un nuovo studente?
+                                                    </button>
                                                 </h2>
                                                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non fuga quisquam explicabo, atque facilis!
-                                                </div>
+                                                    <div class="accordion-body">
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non fuga quisquam explicabo, atque facilis!
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="accordion-item mx-4">
                                                 <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Come posso accedere alle informazioni del mio account? 
-                                                </button>
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Come posso accedere alle informazioni del mio account? 
+                                                    </button>
                                                 </h2>
                                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non fuga quisquam explicabo, atque facilis!
-                                                </div>
+                                                    <div class="accordion-body">
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non fuga quisquam explicabo, atque facilis!
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="accordion-item mx-4">
                                                 <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Posso usare questa dashboard dal mobile?
-                                                </button>
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        Posso usare questa dashboard dal mobile?
+                                                    </button>
                                                 </h2>
                                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non fuga quisquam explicabo, atque facilis!
-                                                </div>
+                                                    <div class="accordion-body">
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non fuga quisquam explicabo, atque facilis!
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>                                                                                  
                                     </div>
                                 </div>
-                                <div class="col-4">
+
+                                <!-- TO DO -->
+                                <div class="col-12 col-lg-4">
                                     <div>
                                         <div class="todo card mt-4 w-100">
                                             <div class="card-header">
@@ -504,9 +515,10 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                           
                                         </div>
                                     </div>
+
+                                    <!-- SATISTICHE -->
                                     <div>
                                         <div class="card mt-4 w-100">
                                             <img src="img/stats.jpeg" class="card-img-top" alt="...">
@@ -532,7 +544,7 @@
                                             <div class="card-body">
                                               <a id="link-card" href="#" class="card-link">Visualizza report approfondito</a>                                              
                                             </div>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -542,6 +554,7 @@
             </div>
         </main>
 
+        <!-- BOOTSTRAP JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
 </html>
