@@ -1,1 +1,1 @@
-Riproduzione di una dashboard tramite l'utilizzo di Bootstrap.
+Riproduzione di una dashboard responsive tramite l'utilizzo di Bootstrap.
